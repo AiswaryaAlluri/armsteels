@@ -6,7 +6,7 @@ export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [visibleCount, setVisibleCount] = useState<number>(9); // LOAD MORE COUNT
 
-  const categories = ["All", "Cuplock", "H Frame"];
+  const categories = ["All", "Cuplock", "H Frame","Jack Pipe","Scaffolding Systems","Ledger Pipe"];
 
   // ---------- AUTO-GENERATED IMAGE LIST ----------
   const rootImages = Array.from({ length: 50 }).map((_, i) => ({
@@ -27,7 +27,25 @@ export default function Gallery() {
     title: `H Frame ${i + 1}`,
   }));
 
-  const images = [...rootImages, ...cuplockImages, ...hFrameImages];
+  const jackPipeImages = Array.from({ length: 1 }).map((_, i) => ({
+    url: `/jackpipe/${i + 1}.jpg`,
+    category: "Jack Pipe",
+    title: `Jack Pipe ${i + 1}`,
+  }));
+
+  const ledgerPipeImages = Array.from({ length: 3 }).map((_, i) => ({
+    url: `/ledger-pipe/${i + 1}.jpg`,
+    category: "Ledger Pipe",
+    title: `Ledger Pipe ${i + 1}`,
+  }));
+
+  const scaffoldingSystemImages = Array.from({ length: 1 }).map((_, i) => ({
+    url: `/scaffolding/${i + 1}.jpg`,
+    category: "Scaffolding Systems",
+    title: `Scaffolding System ${i + 1}`,
+  }));
+
+  const images = [...rootImages, ...cuplockImages, ...hFrameImages, ...jackPipeImages,...ledgerPipeImages,...scaffoldingSystemImages];
 
   // Filter by category
   const filteredImages =
