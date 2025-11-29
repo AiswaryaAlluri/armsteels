@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div id="home" className="pt-20">
       <section className="relative bg-gradient-to-br from-slate-600 via-slate-700 to-blue-900 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[url('./8.jpg')] bg-no-repeat bg-cover bg-center opacity-40"></div>
+        <div className="absolute inset-0 bg-[url('/8.jpg')] bg-no-repeat bg-cover bg-center opacity-40"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
           <div className="text-center">
