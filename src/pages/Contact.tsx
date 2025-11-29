@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
+import { useState } from "react";
+import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -15,11 +15,13 @@ export default function Contact() {
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
-      setFormData({ name: '', phone: '', email: '', message: '' });
+      setFormData({ name: "", phone: "", email: "", message: "" });
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -35,7 +37,8 @@ export default function Contact() {
               Contact Us
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Get in touch with us for any inquiries about our products and services
+              Get in touch with us for any inquiries about our products and
+              services
             </p>
           </div>
 
@@ -44,7 +47,9 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                 <Phone className="text-blue-600" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Call Us</h3>
+              <h3 className="text-xl font-semibold text-slate-800 mb-3">
+                Call Us
+              </h3>
               <p className="text-slate-600 mb-2">Cell</p>
               <a
                 href="tel:9849911178"
@@ -65,7 +70,9 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                 <Mail className="text-blue-600" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Email Us</h3>
+              <h3 className="text-xl font-semibold text-slate-800 mb-3">
+                Email Us
+              </h3>
               <p className="text-slate-600 mb-4">Send us your requirements</p>
               <a
                 href="mailto:armsteelspvtlimited@gmail.com"
@@ -79,17 +86,23 @@ export default function Contact() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                 <MapPin className="text-blue-600" size={28} />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Visit Us</h3>
+              <h3 className="text-xl font-semibold text-slate-800 mb-3">
+                Visit Us
+              </h3>
               <p className="text-slate-600 mb-2">Head Office</p>
               <p className="text-slate-700 text-sm">
-                Bholakpur, Musheerabad,<br />Hyderabad-20
+                Bholakpur, Musheerabad,
+                <br />
+                Hyderabad-20
               </p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white rounded-xl p-8 shadow-md">
-              <h2 className="text-2xl font-bold text-slate-800 mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6">
+                Send Us a Message
+              </h2>
 
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center py-12">
@@ -195,9 +208,12 @@ export default function Contact() {
                   Head Office Location
                 </h3>
                 <p className="text-slate-700 mb-4 leading-relaxed">
-                  1-4-523/7, Beside Lane United Weigh Bridge,<br />
-                  Bholakpur, Musheerabad,<br />
-                  Hyderabad-20,<br />
+                  1-4-523/7, Beside Lane United Weigh Bridge,
+                  <br />
+                  Bholakpur, Musheerabad,
+                  <br />
+                  Hyderabad-20,
+                  <br />
                   Telangana, India
                 </p>
                 <div className="aspect-video rounded-lg overflow-hidden">
@@ -219,11 +235,26 @@ export default function Contact() {
                   Factory Location
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Sy. No. 17 & 18, Narsampally Village,<br />
-                  Yadgarpalli (G.P.), Keesera (M),<br />
-                  R.R. District,<br />
+                  Sy. No. 17 & 18, Narsampally Village,
+                  <br />
+                  Yadgarpalli (G.P.), Keesera (M),
+                  <br />
+                  R.R. District,
+                  <br />
                   Telangana State, India
                 </p>
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps?q=17.4194278717041,78.49853515625&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Head Office Location"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -233,7 +264,9 @@ export default function Contact() {
               Need Immediate Assistance?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Our team is available to help with your construction material requirements. Call us now for immediate stock availability and quotes.
+              Our team is available to help with your construction material
+              requirements. Call us now for immediate stock availability and
+              quotes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
