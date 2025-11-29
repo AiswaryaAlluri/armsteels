@@ -27,8 +27,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="pt-20 bg-slate-50">
-      <section className="py-16 sm:py-20">
+    <div id="contact" className=" bg-slate-50">
+      <section className="py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4">
@@ -68,10 +68,10 @@ export default function Contact() {
               <h3 className="text-xl font-semibold text-slate-800 mb-3">Email Us</h3>
               <p className="text-slate-600 mb-4">Send us your requirements</p>
               <a
-                href="mailto:info@armsteels.com"
+                href="mailto:armsteelspvtlimited@gmail.com"
                 className="text-blue-600 font-semibold hover:text-blue-700"
               >
-                info@armsteels.com
+                armsteelspvtlimited@gmail.com
               </a>
             </div>
 

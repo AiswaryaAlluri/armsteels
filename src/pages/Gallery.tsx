@@ -33,8 +33,8 @@ export default function Gallery() {
     title: `Jack Pipe ${i + 1}`,
   }));
 
-  const ledgerPipeImages = Array.from({ length: 3 }).map((_, i) => ({
-    url: `/ledger-pipe/${i + 1}.jpg`,
+  const ledgerPipeImages = Array.from({ length: 1 }).map((_, i) => ({
+    url: `/ledger-pipe/${i + 3}.jpg`,
     category: "Ledger Pipe",
     title: `Ledger Pipe ${i + 1}`,
   }));
@@ -63,8 +63,8 @@ export default function Gallery() {
   };
 
   return (
-    <div id="gallery" className="pt-20 bg-slate-50">
-      <section className="py-16 sm:py-20">
+    <div id="gallery" className=" bg-slate-50">
+      <section className="py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Header */}

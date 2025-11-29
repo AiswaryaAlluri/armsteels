@@ -2,8 +2,8 @@ import { Building2, User, MapPin, Factory, Target, Award } from 'lucide-react';
 
 export default function About() {
   return (
-    <div id="about" className="pt-20 bg-white">
-      <section className="py-16 sm:py-20">
+    <div id="about" className=" bg-white">
+      <section className="py-8 sm:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-4">

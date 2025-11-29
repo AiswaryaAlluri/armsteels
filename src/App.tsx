@@ -68,7 +68,6 @@ function App() {
       <Header />
       <main>
         <Home />
-        <Services />
         <Gallery />
         <About />
         <Contact />

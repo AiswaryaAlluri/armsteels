@@ -19,7 +19,7 @@ export default function Services() {
         "High-strength clamps ensuring safety and structural integrity.",
     },
     {
-      image: "/ledger-pipe/1.jpg",
+      image: "/ledger-pipe/3.jpg",
       title: "Ledger Pipes",
       description:
         "Best Ledger pipes for strong and efficient construction projects.",
@@ -52,8 +52,8 @@ export default function Services() {
   ];
 
   return (
-    <div id="services" className="pt-20 bg-white">
-      <section className="py-16 sm:py-20">
+    <div id="services" className="bg-white">
+      <section className="py-5 m:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">

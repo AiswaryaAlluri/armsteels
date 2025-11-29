@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              ARM <span className="text-blue-400">Steels</span>
+                <img src="/title-logo.png" alt="Logo" className='w-[150px] rounded-md' />
             </h3>
             <p className="text-slate-300 text-sm mb-4">
               Trusted manufacturer and supplier of high-quality scaffolding and construction support materials.
