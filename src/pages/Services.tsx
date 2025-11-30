@@ -93,7 +93,7 @@ export default function Services() {
 
                   {/* CTA */}
                   <a
-                    href="https://wa.me/+919849191571"
+                    href="https://wa.me/+919849911178?text=I%20am%20interested%20in%20your%20scaffolding%20services."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-all duration-200"
